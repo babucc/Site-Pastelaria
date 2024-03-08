@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    background-image: url(img/camarao.jpeg);
+    background-size: cover;
+    font-weight: 800;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000076;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12vh;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  nav a:hover {
+    color: #000000;
+    background-color: #ffffffb8;
+    border-radius: 10px;
+    transition: 1s;
+    text-shadow: 0.1em 0.1em 0.2em white;
+  }
+  
+ 
+  main {
+    padding-top: 70px; 
+  }
+  
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #home h2 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  
+  #home p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px #333;
+    max-width: 800px;
+    margin-bottom: 40px;
+    font-weight: 800;
+  }
+  
+  #home a {
+    background-color: #ffffff69;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  #home a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .rodape{
+    display: flex;
+    align-items: center;
+    background-color: #00000076;
+    height: 8vh;
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  .esq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    color: white;
+    text-shadow: 0.0em 0.0em 0.1em white;
+  }
+
+  .dir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41%;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em white;
+  }
+
+@media (max-width: 768px) {
+    header {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    }
+  
+    nav ul{
+    flex-direction: column;
+    margin-top: 10px;
+    }
+  
+    nav ul li {
+    
+      margin-bottom: 10px;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .rodape{
+        display: none;
+    }
+
+    h2{
+        padding-top: 200px;
+    }
+
+    h1{
+        display: none;
+    }
+
+  }
+
+  @media (max-width: 415px){
+    .rodape{
+        display: none;
+    }
+
+    header{
+        background-color: none;
+    }
+  }
